@@ -1,5 +1,21 @@
 // bower:scss
 // endbower
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,500');
+
+@font-face {
+  font-family: 'AlegreSans';
+  src: url('../fonts/AlegreSans-Regular.eot?#iefix') format('embedded-opentype'),  url('../fonts/AlegreSans-Regular.woff') format('woff'), url('../fonts/AlegreSans-Regular.ttf')  format('truetype'), url('../fonts/AlegreSans-Regular.svg#AlegreSans-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
 
 .browserupgrade {
   margin: 0.2em 0;
@@ -10,31 +26,140 @@
 
 body {
   background: #fafafa;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Quicksand', Gil Sans, arial, sans-serif;
   color: #333;
 }
 
 .main {
   display: flex;
   flex-direction: column;
+  max-width: 900px;
 }
 
 .content {
   flex: 1;
+  margin-top: 13px;
+  position: relative;
 }
 
 .content--ad {
   background: #5fe6be;
   color: #00237e;
   transition:
-    font-size 0.5s cubic-bezier(0.61,-0.19, 0.7,-0.11),
-    flex 0.5s cubic-bezier(0.61,-0.19, 0.7,-0.11);
+    font-size 0.4s cubic-bezier(0.61,-0.19, 0.7,-0.11),
+    flex 0.4s cubic-bezier(0.61,-0.19, 0.7,-0.11),
+    margin-right 0.4s cubic-bezier(0.61,-0.19, 0.7,-0.11);
   font-size: 14px;
   padding: 14px 24px 32px;
+  margin-right: 55px;
+  opacity: 1;
 
   &.open {
     flex: 5;
     font-size: 40px;
+    margin-right: 0px;
+
+    .form {
+      padding-top: 0px;
+    }
+
+    .form-input,
+    .form-button {
+      height: 48px;
+    }
+
+    .form-input {
+      padding: 0.85rem 1rem;
+      font-size: 1rem;
+    }
+
+    .form-button {
+      padding: 0.75em 1em;
+      font-size: 13px;
+    }
   }
 
+  .content-heading {
+    font-weight: 500;
+  }
+}
+
+.content-remove {
+  position: absolute;
+  top: 11px;
+  right: 14px;
+  font-size: 10px;
+  color: #00237e;
+  text-decoration: none;
+}
+
+h1, h2 {
+  font-family: 'AlegreSans', sans-serif;
+  font-weight: 400;
+}
+
+.content-examples {
+  font-size: 12px;
+  float: left;
+  width:180px;
+
+  p {
+    margin: 0;
+    padding: 0 16px;
+    text-align: center;
+  }
+}
+
+.form {
+  padding-top: 10px;
+  transition: padding-top 0.4s;
+}
+
+.form-group {
+  display: flex;
+}
+
+.form-input,
+.form-button {
+  height: 39px;
+  transition:
+    font-size 0.3s,
+    height 0.3s,
+    padding 0.3s;
+}
+
+.form-input {
+  border: 1px solid #cbcbcb;
+  margin: 0;
+  color: #505050;
+  border-radius: 6px;
+  background: #fff;
+  cursor: auto;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  font-size: 12px;
+  padding: 0.6em 0.75em;
+  outline: 0;
+}
+
+.form-button {
+  color: #5fe6be;
+  background-color: #00237e;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  letter-spacing: 0.125em;
+  font-weight: 800;
+  font-style: normal;
+  text-transform: uppercase;
+  border: 0;
+  margin: 0;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  font-size: 10px;
+  padding: 0.5em 0.75em;
 }

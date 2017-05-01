@@ -6,8 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>flexbird</title>
 
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
-    <!-- Place favicon.ico in the root directory -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#fdfdfd">
 
     <!-- build:css styles/vendor.css -->
     <!-- bower:css -->
@@ -24,93 +28,89 @@
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
     
-    <h1>Lower ranking on Google for the pages with the pop-up ads on mobile</h1> 
+    <header>
+      <h1>Lower ranking on Google for the pages with the pop-up ads on mobile</h1> 
+      <hr>
+    </header>
 
     <main class="main">
       <blockquote class="content">
-        <p>We’ve recently seen many examples where pages show intrusive interstitials to users. While the underlying content is present on the page and available to be indexed by Google, content may be visually obscured by an interstitial. This can frustrate users because they are unable to easily access the content that they were expecting when they tapped on the search result. </p>
-
-        <p>Pages that show intrusive interstitials provide a poorer experience to users than other pages where content is immediately accessible. This can be problematic on mobile devices where screens are often smaller. To improve the mobile search experience, after January 10, 2017, pages where content is not easily accessible to a user on the transition from the mobile search results may not rank as highly. </p>
-
+        <p>We’ve recently seen many examples where pages show intrusive interstitials to users. While the underlying content is present on the page and available to be indexed by Google, content may be visually obscured by an interstitial. This can frustrate users because they are unable to easily access the content that they were expecting when they tapped on the search result.</p>
+        <p>Pages that show intrusive interstitials provide a poorer experience to users than other pages where content is immediately accessible. This can be problematic on mobile devices where screens are often smaller. To improve the mobile search experience, after January 10, 2017, pages where content is not easily accessible to a user on the transition from the mobile search results may not rank as highly.</p>
         <p>Here are some examples of techniques that make content less accessible to a user:</p>
-        <ul><li>Showing a popup that covers the main content, either immediately after the user navigates to a page from the search results, or while they are looking through the page.</li></ul>
-        <ul><li>Displaying a standalone interstitial that the user has to dismiss before accessing the main content.</li>
-        <li>Using a layout where the above-the-fold portion of the page appears similar to a standalone interstitial, but the original content has been inlined underneath the fold. </li></ul>
-
+        <ul>
+          <li>Showing a popup that covers the main content, either immediately after the user navigates to a page from the search results, or while they are looking through the page.</li>
+          <li>Displaying a standalone interstitial that the user has to dismiss before accessing the main content.</li>
+          <li>Using a layout where the above-the-fold portion of the page appears similar to a standalone interstitial, but the original content has been inlined underneath the fold.</li>
+        </ul>
+        
         <footer>
-          <cite>
-            Source: <a href="https://webmasters.googleblog.com/2016/08/helping-users-easily-access-content-on.html" title="Helping users easily access content on mobile">Google Webmaster Central Blog</a>
-          </cite>
+          <cite>Source: <a href="https://webmasters.googleblog.com/2016/08/helping-users-easily-access-content-on.html" title="Helping users easily access content on mobile">Google Webmaster Central Blog</a></cite>
         </footer>
       </blockquote>
-       
-      <div class="flexbird content content--ad">
-        <p class="flexbird-heading">Signup For Access To Free Experiances & Inspiration</p>
+
+      <div class="content content--ad" data-scroll>
+        <a class="content-remove" href="javascript:;">Remove</a>
+        <p class="content-heading">Signup For Access To Free Inspiration &amp; Experiances</p>
         <p>Signup for our newsletter and get access to free downloads, as well as daily tips, tricks and resources.</p>
-        <form>
-          <input type="text" placeholder="Enter your email address.." />
-          <input type="submit" value="Give me some free stuff!" />
+        <form class="form">
+          <div class="form-group">
+            <input class="form-input" placeholder="Enter your email address.." type="text"> 
+            <input class="form-button" type="submit" value="Give me some free stuff!">
+          </div> 
         </form>
       </div>
 
       <blockquote class="content">
         <h2>Examples of interstitials that make content less accessible</h2>
-
-        <div style="float:left; width:180px">
-        <a href="https://2.bp.blogspot.com/-dqV7ahVFcOk/V7xvnb0DIQI/AAAAAAAAeS4/E610UnF-Np0CXRAkkdbbzDLjfbzjBf98QCLcB/s1600/t1i1.png" imageanchor="1" target="_blank" wrc_done="true"><img border="0" src="https://2.bp.blogspot.com/-dqV7ahVFcOk/V7xvnb0DIQI/AAAAAAAAeS4/E610UnF-Np0CXRAkkdbbzDLjfbzjBf98QCLcB/s320/t1i1.png" width="176" height="320"></a><span class="wrc1 wrc_icon wrc_injected"></span>
-        <br>An example of an intrusive popup
+        <div class="content-examples">
+          <a href="https://2.bp.blogspot.com/-dqV7ahVFcOk/V7xvnb0DIQI/AAAAAAAAeS4/E610UnF-Np0CXRAkkdbbzDLjfbzjBf98QCLcB/s1600/t1i1.png" target="_blank"><img border="0" height="320" src="https://2.bp.blogspot.com/-dqV7ahVFcOk/V7xvnb0DIQI/AAAAAAAAeS4/E610UnF-Np0CXRAkkdbbzDLjfbzjBf98QCLcB/s320/t1i1.png" width="176"></a>
+          <p>An example of an intrusive popup</p>
         </div>
-
-        <div style="float:left; width:180px">
-        <a href="https://2.bp.blogspot.com/-R4dBJmw3NFU/V7xvoLqiHLI/AAAAAAAAeTA/ELJtmkGIpnoWF1OqDzNFinbJPzlP2-X5wCLcB/s1600/t1i2.png" imageanchor="1" target="_blank" wrc_done="true"><img border="0" src="https://2.bp.blogspot.com/-R4dBJmw3NFU/V7xvoLqiHLI/AAAAAAAAeTA/ELJtmkGIpnoWF1OqDzNFinbJPzlP2-X5wCLcB/s320/t1i2.png" width="176" height="320"></a><span class="wrc1 wrc_icon wrc_injected"></span>
-        <br>An example of an intrusive standalone interstitial
+        <div class="content-examples">
+          <a href="https://2.bp.blogspot.com/-R4dBJmw3NFU/V7xvoLqiHLI/AAAAAAAAeTA/ELJtmkGIpnoWF1OqDzNFinbJPzlP2-X5wCLcB/s1600/t1i2.png" target="_blank"><img border="0" height="320" src="https://2.bp.blogspot.com/-R4dBJmw3NFU/V7xvoLqiHLI/AAAAAAAAeTA/ELJtmkGIpnoWF1OqDzNFinbJPzlP2-X5wCLcB/s320/t1i2.png" width="176"></a>
+          <p>An example of an intrusive standalone interstitial</p>
         </div>
-
-        <div style="float:left; width:180px">
-        <a href="https://1.bp.blogspot.com/-Vr20lkcZVd8/V7xvnvEE0lI/AAAAAAAAeS8/fjFhiWO2RIodGAdL__CJfCxWG61gyI9FACLcB/s1600/t1i3.png" imageanchor="1" target="_blank" wrc_done="true"><img border="0" src="https://1.bp.blogspot.com/-Vr20lkcZVd8/V7xvnvEE0lI/AAAAAAAAeS8/fjFhiWO2RIodGAdL__CJfCxWG61gyI9FACLcB/s320/t1i3.png" width="176" height="320"></a><span class="wrc1 wrc_icon wrc_injected"></span>
-        <br>Another example of an intrusive standalone interstitial
+        <div class="content-examples">
+          <a href="https://1.bp.blogspot.com/-Vr20lkcZVd8/V7xvnvEE0lI/AAAAAAAAeS8/fjFhiWO2RIodGAdL__CJfCxWG61gyI9FACLcB/s1600/t1i3.png" target="_blank"><img border="0" height="320" src="https://1.bp.blogspot.com/-Vr20lkcZVd8/V7xvnvEE0lI/AAAAAAAAeS8/fjFhiWO2RIodGAdL__CJfCxWG61gyI9FACLcB/s320/t1i3.png" width="176"></a>
+          <p>Another example of an intrusive standalone interstitial</p>
         </div>
-
-        <p style="clear:both;">&nbsp;</p>
-
+        <p style="clear:both; margin-bottom: -20px;">&nbsp;</p>
         <p>By contrast, here are some examples of techniques that, used responsibly, would not be affected by the new signal:</p>
-        <ul><li>Interstitials that appear to be in response to a legal obligation, such as for cookie usage or for age verification.</li>
-        <li>Login dialogs on sites where content is not publicly indexable. For example, this would include private content such as email or unindexable content that is behind a paywall.</li>
-        <li>Banners that use a reasonable amount of screen space and are easily dismissible. For example, the app install banners provided by Safari and Chrome are examples of banners that use a reasonable amount of screen space.</li></ul>
-
-        <h2>Examples of interstitials that would not be affected by the new signal, if used responsibly</h2>
-
-        <div style="float:left; width:180px">
-        <a href="https://3.bp.blogspot.com/-zp6z9z_I3-A/V7xxn1KfQZI/AAAAAAAAeTM/h4pHYwbKTFMzb4lfWrh5iLf_ULqOa4yqgCLcB/s1600/t2i1.png" imageanchor="1" target="_blank" wrc_done="true"><img border="0" src="https://3.bp.blogspot.com/-zp6z9z_I3-A/V7xxn1KfQZI/AAAAAAAAeTM/h4pHYwbKTFMzb4lfWrh5iLf_ULqOa4yqgCLcB/s320/t2i1.png" width="176" height="320"></a><span class="wrc1 wrc_icon wrc_injected"></span>
-        <br>An example of an interstitial for cookie usage
+        <ul>
+          <li>Interstitials that appear to be in response to a legal obligation, such as for cookie usage or for age verification.</li>
+          <li>Login dialogs on sites where content is not publicly indexable. For example, this would include private content such as email or unindexable content that is behind a paywall.</li>
+          <li>Banners that use a reasonable amount of screen space and are easily dismissible. For example, the app install banners provided by Safari and Chrome are examples of banners that use a reasonable amount of screen space.</li>
+        </ul>
+        
+        <h2 style="padding-top: 13px;">Examples of interstitials that would not be affected by the new signal, if used responsibly</h2>
+        <div class="content-examples">
+          <a href="https://3.bp.blogspot.com/-zp6z9z_I3-A/V7xxn1KfQZI/AAAAAAAAeTM/h4pHYwbKTFMzb4lfWrh5iLf_ULqOa4yqgCLcB/s1600/t2i1.png" target="_blank"><img border="0" height="320" src="https://3.bp.blogspot.com/-zp6z9z_I3-A/V7xxn1KfQZI/AAAAAAAAeTM/h4pHYwbKTFMzb4lfWrh5iLf_ULqOa4yqgCLcB/s320/t2i1.png" width="176"></a>
+          <p>An example of an interstitial for cookie usage</p>
         </div>
-
-        <div style="float:left; width:180px">
-        <a href="https://3.bp.blogspot.com/-gjgfeSOqXfQ/V7xxoOUpG4I/AAAAAAAAeTU/tv8H7xfg1xYuWioihQtuYLVhDuw57ptQwCLcB/s1600/t2i2.png" imageanchor="1" target="_blank" wrc_done="true"><img border="0" src="https://3.bp.blogspot.com/-gjgfeSOqXfQ/V7xxoOUpG4I/AAAAAAAAeTU/tv8H7xfg1xYuWioihQtuYLVhDuw57ptQwCLcB/s320/t2i2.png" width="176" height="320"></a><span class="wrc1 wrc_icon wrc_injected"></span>
-        <br>An example of an interstitial for age verification
+        <div class="content-examples">
+          <a href="https://3.bp.blogspot.com/-gjgfeSOqXfQ/V7xxoOUpG4I/AAAAAAAAeTU/tv8H7xfg1xYuWioihQtuYLVhDuw57ptQwCLcB/s1600/t2i2.png" target="_blank"><img border="0" height="320" src="https://3.bp.blogspot.com/-gjgfeSOqXfQ/V7xxoOUpG4I/AAAAAAAAeTU/tv8H7xfg1xYuWioihQtuYLVhDuw57ptQwCLcB/s320/t2i2.png" width="176"></a>
+          <p>An example of an interstitial for age verification</p>
         </div>
-
-        <div style="float:left; width:180px">
-        <a href="https://1.bp.blogspot.com/-VB85oWnMAi8/V7xxoMTEmTI/AAAAAAAAeTQ/GpH1f2RX14I17MW6OAreKRd4v9TuF0R-wCLcB/s1600/t2i3.png" imageanchor="1" target="_blank" wrc_done="true"><img border="0" src="https://1.bp.blogspot.com/-VB85oWnMAi8/V7xxoMTEmTI/AAAAAAAAeTQ/GpH1f2RX14I17MW6OAreKRd4v9TuF0R-wCLcB/s320/t2i3.png" width="176" height="320"></a><span class="wrc1 wrc_icon wrc_injected"></span>
-        <br>An example of a banner that uses a reasonable amount of screen space
+        <div class="content-examples">
+          <a href="https://1.bp.blogspot.com/-VB85oWnMAi8/V7xxoMTEmTI/AAAAAAAAeTQ/GpH1f2RX14I17MW6OAreKRd4v9TuF0R-wCLcB/s1600/t2i3.png" target="_blank"><img border="0" height="320" src="https://1.bp.blogspot.com/-VB85oWnMAi8/V7xxoMTEmTI/AAAAAAAAeTQ/GpH1f2RX14I17MW6OAreKRd4v9TuF0R-wCLcB/s320/t2i3.png" width="176"></a>
+          <p>An example of a banner that uses a reasonable amount of screen space</p>
         </div>
-
         <p style="clear:both;">&nbsp;</p>
-
+        
         <footer>
-          <cite>
-            Source: <a href="https://webmasters.googleblog.com/2016/08/helping-users-easily-access-content-on.html" title="Helping users easily access content on mobile">Google Webmaster Central Blog</a>
-          </cite>
+          <cite>Source: <a href="https://webmasters.googleblog.com/2016/08/helping-users-easily-access-content-on.html" title="Helping users easily access content on mobile">Google Webmaster Central Blog</a></cite>
         </footer>
       </blockquote>
+
     </main>
 
 
 
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
+    <script src="/bower_components/waypoints/lib/noframework.waypoints.js"></script>
     <!-- endbower -->
-    <script src="vendor/hunt.js"></script>
     <!-- endbuild -->
     
     <!-- build:js scripts/main.js -->
